@@ -1,4 +1,5 @@
 import exercise2
+from extras import run as e_run
 
 choice = 0
 
@@ -8,14 +9,17 @@ if __name__ == '__main__':
 
     while True:
         try:
-            choice = int(input("Lūdzu izvēlieties uzdevuma nr. (1-2): "))
-            if choice == 1:
+            choice = input("Lūdzu izvēlieties uzdevuma nr. (1-2 vai extra): ")
+            if choice == "1":
                 exercise2.fun_01()
                 
-            if choice == 2:
-                exercise2.fun_02()
+            if choice == "2":
+                exercise2.fun_04()
 
-            if choice == -1:
+            if choice == "extra":
+                e_run()
+
+            if choice == "-1":
                 break
         except:
             pass

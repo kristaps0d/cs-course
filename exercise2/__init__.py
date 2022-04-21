@@ -40,11 +40,15 @@ def fun_02():
             pass
 
 def fun_03():
-    while True:
-        try:
-            data = input("\nVai papagailis runā: ")
-            if data == '-1':
-                break
+    pass
+    # while True:
+    #     try:
+    #         data = input("\nVai papagailis runā: ")
+    #         if data == '-1':
+    #             break
             
-        except:
-            pass
+    #     except:
+    #         pass
+        
+def fun_04():
+    pass
